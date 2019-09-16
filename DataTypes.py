@@ -24,6 +24,7 @@ List :
 List_create=["a",1,"e",5,"i",5.2]
 #Update list
 List_create[3]="updated"
+print(List_create)
 #Output: 
 #List_create = ['a', 1, 'e', 'updated', 'i', 5.2]
 
@@ -41,6 +42,7 @@ Dictionary :
 dictionary={"a":1,"b":2,"c":3,4:"d"}
 #Update Dictionary
 dictionary["a"]=5
+print(dictionary)
 #Output :
 #dictionary = {'a': 5, 'b': 2, 'c': 3,4:'d'}
 
@@ -58,6 +60,7 @@ Sets :
 set_create={"a",1,10.2,"z"}
 #Update Set
 set_create.add("z")
+print(set_create)
 #Output :
 #set_create = {'z', 1, 10.2, 'a'}
 
@@ -72,13 +75,16 @@ Integers :
 """
 #Create Integer
 int_create = 50
+print(int_create)
 #Output :
 #int_create = 50
 #Update Integer
 int_create[0]= 1
+print(int_create)
 #Output :
 #TypeError: 'int' object does not support item assignment
 int_create = 60
+print(int_create)
 #Output :
 #int_create = 60
 
@@ -92,13 +98,16 @@ String :
 """
 #Create String
 str_create = "Python"
+print(str_create)
 #Output :
 #str_create = 'Python'
 #Update String
 str_create[0] = "C"
+print(str_create)
 #Output :
 #TypeError: 'str' object does not support item assignment
 str_create = "Cython"
+print(str_create)
 #Output :
 #str_create = 'Cython'
 
@@ -109,13 +118,16 @@ FrozenSet :
 """
 #Create FrozenSet
 frozen_set=frozenset("a","b",100)
+print(frozen_set)
 #TypeError: frozenset expected at most 1 arguments, got 3
 argument=[1,2]
 frozen_set=frozenset(argument)
+print(frozen_set)
 #Output:
 #frozen_set = frozenset({1, 2})
 #Update FrozenSet
 argument1=("a","b")
 frozen_set=frozenset(argument1)
+print(frozen_set)
 #Output:
 #frozen_set = frozenset({'a','b'})
