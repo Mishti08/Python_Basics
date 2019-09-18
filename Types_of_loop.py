@@ -1,7 +1,13 @@
 """
 Python has different types of loop
-1.for loop
-2.while loop
+1.Iterative loops
+    1.for loop
+    2.while loop
+    
+2.Decision making loops
+    1.if
+    2.if else
+    3.if elif else
 """
 """
 For loop:
@@ -13,7 +19,9 @@ For loop:
 """
 #Example_1:
 #create for loop
-#range(start_value,end_value) where range permits (end_value-1).Example:range(0,5)->0,1,2,3,4
+#range(start_value,end_value,step=1) where range permits (end_value-1).Example:range(0,5)->0,1,2,3,4
+#Step in range() means how much difference it should take for next count.Example:range(0,10,2)->0,2,4,6,8
+#By default step in range() will be 1.
 for value in range(0,5):
     print(value)
     
@@ -148,3 +156,109 @@ else:
 #Output:
 #   Value of a: 0
 
+"""
+If loop:
+    1.Syntax: if (___) :
+    2.Used for decision making.
+    3.If loop will execute only if the condition is satisfied otherwise it will exit the loop.
+"""
+#Example_1:
+#create if loop
+#range(start_value,end_value,step=1) where range permits (end_value-1).Example:range(0,5)->0,1,2,3,4
+#Step in range() means how much difference it should take for next count.Example:range(0,10,2)->0,2,4,6,8
+if value in range(0,5):
+    print("Value exists:",value)
+    
+#Output:
+# NameError: name 'value' is not defined
+
+#Example_2:
+#create if loop
+a=1
+if value in range(0,5):
+    print("Value exists:",value)
+    
+#Output:
+# Value exists: 1
+
+"""
+If else loop:
+    1.Syntax: if (___) :
+                statement
+              else
+                statement
+    2.Used for decision making.
+    3.If loop will execute only if the condition is satisfied otherwise it will execute else loop and exit.
+"""
+#Example_1:
+#create if else loop
+#range(start_value,end_value,step=1) where range permits (end_value-1).Example:range(0,5)->0,1,2,3,4
+#Step in range() means how much difference it should take for next count.Example:range(0,10,2)->0,2,4,6,8
+if value in range(0,5):
+    print("Value exists:",value)
+else:
+    print("Else loop will also not executes as value has name error")
+#Output:
+# NameError: name 'value' is not defined
+
+#Example_2:
+#create if else loop
+a=12
+if value in range(0,5):
+    print("Value exists:"value)
+else:
+    print("Else loop will get executed as value has higher value than required for condition to satisfy")    
+#Output:
+# Else loop will get executed as value has higher value than required for condition to satisfy
+
+
+"""
+If elif else loop:
+    1.Syntax: if (___) :
+                statement
+              elif (___):
+                statement
+              else
+                statement
+    2.Used for decision making.
+    3.If loop will execute only if the condition is satisfied otherwise 
+    it will check for elif condition if the condition is satisfied elif loop executes
+    otherwise it will execute else loop and exit.
+"""
+#Example_1:
+#create if elif else loop
+#range(start_value,end_value,step=1) where range permits (end_value-1).Example:range(0,5)->0,1,2,3,4
+if value in range(2,5):
+    print("Value exists:"value)
+elif value in range(0,5):
+    print("Value exists:",value)
+else:
+    print("Else loop will also not executes as value has name error")
+#Output:
+# NameError: name 'value' is not defined
+
+#Example_2:
+#create if elif else loop
+a=3
+if value in range(5,10):
+    print("Value exists:"value)
+elif value in range(1,5):
+    print("Value exists in elif condition:",value)
+else:
+    print("Else loop will also not executes as value has name error")
+    
+#Output
+# Value exists in elif condition: 3
+
+#Example_3:
+#create if elif else loop
+a=12
+if value in range(0,5):
+    print("Value exists:"value)
+elif value in range(5,11):
+    print("Value exists:",value)
+else:
+    print("Else loop will also not executes as value has name error")
+    
+#Output
+# Else loop will also not executes as value has name error
