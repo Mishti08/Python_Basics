@@ -1,4 +1,4 @@
-Reading an open file  : Hi All
+Hi All
 This is python tutorail for quick revision.
 Keeping the file very simple.
 But,as we learn more file complexity will increase.
