@@ -1,2 +1,2 @@
-# Python_Basics
-Basics of python for fast revision
+# Python_Data_Structure
+Data Structure implementation in python
